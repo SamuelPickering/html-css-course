@@ -17,8 +17,7 @@
       margin-bottom: 0px;
     }
     .thumbnail {
-      width: 300px;
-      display: block;
+      width: 100%;
     }
     .search-bar {
       border-color: grey;
@@ -33,19 +32,19 @@
     }
 
     .video-preview {
-      width: 300px;
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 15px;
+
     }
+
+    .video-info-grid {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+
     .channel-pic {
-      display: inline-block;
-      width: 50px;
-      vertical-align: top;
+
     }
     .video-info {
-      display: inline-block;
-      width: 200px;
+
     }
     .profile-pic {
       width: 80%;
@@ -67,64 +66,177 @@
       margin-top: 2px;
     }
 
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap:40px;
+    }
+
     
   </style>
 </head>
 
 <body>
   <input class="search-bar" type="text" placeholder="Search">
+  <div class="video-grid">
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">     
+          <img class="profile-pic" src="channel-pictures/channel-1.jpeg">  
+        </div> 
+        <div class="video-info">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+            3.4M views &#183; 6 months ago
+            </p>
+        </div>
+    
   
-  <div class="video-preview">
-    <div class="thumbnail-row">
-      <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-    </div>
-    <div>
-      <div class="channel-pic">     
-        <img class="profile-pic" src="channel-pictures/channel-1.jpeg">  
-      </div> 
-      <div class="video-info">
-        <p class="video-title">
-          Talking Tech and AI with Google CEO Sundar Pichai!
-          </p>
-          <p class="video-author">
-            Marques Brownlee
-          </p>
-          <p class="video-stats">
-          3.4M views &#183; 6 months ago
-          </p>
       </div>
   
-
     </div>
-
-</div>
+    
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">     
+          <img class="profile-pic" src="channel-pictures/channel-2.jpeg">  
+        </div> 
+        <div class="video-info">
+          <p class="video-title">
+            Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+            19M views &#183; 4 years ago
+            </p>
+        </div>
+    
   
-  <div class="video-preview">
-    <div class="thumbnail-row">
-      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-    </div>
-    <div>
-      <div class="channel-pic">     
-        <img class="profile-pic" src="channel-pictures/channel-2.jpeg">  
-      </div> 
-      <div class="video-info">
-        <p class="video-title">
-          Try Not To Laugh Challenge #9
-          </p>
-          <p class="video-author">
-            Markiplier
-          </p>
-          <p class="video-stats">
-          19M views &#183; 4 years ago
-          </p>
       </div>
   
-
+  
+  
     </div>
-
-
-
+  
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">     
+          <img class="profile-pic" src="channel-pictures/channel-3.jpeg">  
+        </div> 
+        <div class="video-info">
+          <p class="video-title">
+            How Binary Works, and the Power of Abstraction
+            </p>
+            <p class="video-author">
+              Josh's channel
+            </p>
+            <p class="video-stats">
+            191k views &#183; 1 month ago
+            </p>
+        </div>
+    
+  
+      </div>
+  
+    </div>
+    
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">     
+          <img class="profile-pic" src="channel-pictures/channel-4.jpg">  
+        </div> 
+        <div class="video-info">
+          <p class="video-title">
+            Lecture 1: Algorithmic Thinking, Peak Finding
+            </p>
+            <p class="video-author">
+              MIT OpenCourseWare
+            </p>
+            <p class="video-stats">
+            5M views &#183; 10 years ago
+            </p>
+        </div>
+    
+  
+      </div>
+  
+  
+  
+    </div>
+  
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">     
+          <img class="profile-pic" src="channel-pictures/channel-5.jpg">  
+        </div> 
+        <div class="video-info">
+          <p class="video-title">
+            How to Count Dice Rolls - An Introduction to Dynamic Programming
+            </p>
+            <p class="video-author">
+              Spanning Tree
+            </p>
+            <p class="video-stats">
+            125k views &#183; 2 years
+            </p>
+        </div>
+    
+  
+      </div>
+  
+    </div>
+    
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">     
+          <img class="profile-pic" src="channel-pictures/channel-6.jpg">  
+        </div> 
+        <div class="video-info">
+          <p class="video-title">
+            How to Awaken & Enhance Your Analytical Problem-Solving Mind
+            </p>
+            <p class="video-author">
+              Colin Galen
+            </p>
+            <p class="video-stats">
+            40k views &#183; 2 months ago
+            </p>
+        </div>
+    
+  
+      </div>
+  
+  
+  
+    </div>
   </div>
+ 
 </body>
 
 </html>
